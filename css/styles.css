@@ -1,4 +1,4 @@
-/* css/styles.css of sticky-notes making sticky-notes.bauska.org */
+/* ./css/styles.css of sticky-notes for sticky-notes.bauska.org */
 @import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Norican&display=swap");
 *,
 *::before,
@@ -13,7 +13,7 @@ ol {
   list-style: none;
   font-family: "Grape Nuts", cursive;
   font-size: 2.4rem;
-  color: midnightblue;
+  color: #191970;  /* 191970 = midnight blue */
 }
 
 html {
@@ -36,7 +36,7 @@ html body {
 h1 {
   margin-top: 2rem;
   font-family: "Norican", cursive;
-  color: saddlebrown;
+  color: #a52a2a;  /* saddlebrown */
   position: relative;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@ ul:not(ul ul) .done {
 ul:not(ul ul) > li {
   --levitate: 0;
   padding: 1.2rem 2rem;
-  background-color: pink;
+  background-color: #ffc0cb;  /* pink=very pale red */
   position: relative;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -87,7 +87,7 @@ ul:not(ul ul) > li::after {
   transition: opacity 0.3s;
   z-index: 1;
   mix-blend-mode: overlay;
-  background-image: linear-gradient(to left, #ffe4b2, #c8b188);
+  background-image: linear-gradient(to left, #ffe4b2, #c8b188);  /* pale orange & slightly desaturated orange. */
 }
 ul:not(ul ul) > li:hover {
   --levitate: 1;
@@ -100,7 +100,7 @@ ul:not(ul ul) > li:hover::after {
   opacity: 0.6;
 }
 ul:not(ul ul) > li.big {
-  background-color: lightgreen;
+  background-color: #00ff00;  /* 00ff00 lightgreen */
   padding: 1.6rem 2rem;
   padding-bottom: 3rem;
 }
